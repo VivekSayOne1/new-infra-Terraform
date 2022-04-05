@@ -146,25 +146,5 @@ resource "aws_iam_instance_profile" "terraform_profile" {
 
 
 
-#lambda
 
-resource "aws_iam_role" "terraform_lambda" {
-  name = "terraform_lambda"
-
-  assume_role_policy = <<EOF
-{
-  "Version": "2012-10-17",
-  "Statement": [
-    {
-      "Action": "sts:AssumeRole",
-      "Principal": {
-        "Service": "lambda.amazonaws.com"
-      },
-      "Effect": "Allow",
-      "Sid": ""
-    }
-  ]
-}
-EOF
-}
 
