@@ -1,10 +1,6 @@
 resource "aws_s3_bucket" "terraform-s3" {
   bucket = var.bucket
 
-  tags = {
-    Name        = "My bucket"
-    Environment = "Dev"
-  }
 }
 /*
 resource "aws_s3_bucket_acl" "s3-acl" {

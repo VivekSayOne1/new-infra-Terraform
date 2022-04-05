@@ -1,8 +1,8 @@
 resource "aws_iam_user" "iam-user" {
-    name = "max"
+    name = "sayone_user"
 }
 resource "aws_iam_user_policy" "new_policy" {
-  name = "new"
+  name = "sayone_user_policy"
   user = aws_iam_user.iam-user.id
 policy = <<EOF
 {
